@@ -6,8 +6,27 @@ type LastWidgetProps = {
 
 const InputSelect = ({ text }: LastWidgetProps) => {
 	const [show, setShow] = useState(false);
+	// const [count, setcount] = useState(1);
 	const handleSelect = () => {
 		setShow((prevValue) => !prevValue);
+		//bolean logics
+
+		// true && true = true;
+		// true && false = false;
+		// true && true && true = true;
+		// true && true && false = false;
+		// true && true && false && true = false;
+		// false && true && true = false;
+
+		// true || true = true;
+		// true || false = true;
+		// false || false = false;
+		// setcount(precount => precount+1)
+
+		// setcount((preCount) => {
+
+		// 	return preCount + 1
+		// });
 	};
 
 	return (
